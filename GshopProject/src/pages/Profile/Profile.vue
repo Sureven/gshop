@@ -3,7 +3,7 @@
     <section class="profile">
       <HeadTop title="我的"></HeadTop>
       <section class="profile-number">
-        <a href="javascript:" class="profile-link">
+        <router-link to="/login" class="profile-link">
           <div class="profile_image">
             <i class="iconfont icon-person"></i>
           </div>
@@ -19,7 +19,7 @@
           <span class="arrow">
               <i class="iconfont icon-jiantou1"></i>
             </span>
-        </a>
+        </router-link>
       </section>
       <section class="profile_info_data border-1px">
         <ul class="info_data_list">
@@ -106,6 +106,7 @@
   @import "../../common/stylus/mixins.styl"
   .profile //我的
     width 100%
+    overflow hidden
     .profile-number
       margin-top 45.5px
       .profile-link
